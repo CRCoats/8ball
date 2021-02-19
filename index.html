@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title"><u>Magic 8 Ball</u></h1>    
+    </header>
+      
+    <div class="ball">
+        <img id = 'ball' src = "/img/magic8ball_start.png">
+    </div>
+
+    <script>
+        function createInput() {
+            var x = document.createElement("INPUT");
+            x.setAttribute("type", "text");
+            x.setAttribute("value", "I can foresee all");
+            document.body.appendChild(x);
+        };
+        createInput();
+    </script>
+
+    <button onclick="chooseResponse(getRandom())">Reveal!
+    </button>
+
+    <script>
+        function getRandom() {
+            min = 1;
+            max = 20;
+            return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
+        }
+        function chooseResponse(randomInt) {
+            if (randomInt == 1) {
+                document.getElementById("ball").src = "/img/magic8ball_1.png";
+            }
+            if (randomInt == 2) {
+                document.getElementById("ball").src = "/img/magic8ball_2.png";
+            }
+            if (randomInt == 3) {
+                document.getElementById("ball").src = "/img/magic8ball_3.png";
+            }
+            if (randomInt == 4) {
+                document.getElementById("ball").src = "/img/magic8ball_4.png";
+            }
+            if (randomInt == 5) {
+                document.getElementById("ball").src = "/img/magic8ball_5.png";
+            }
+            if (randomInt == 6) {
+                document.getElementById("ball").src = "/img/magic8ball_6.png";
+            }
+            if (randomInt == 7) {
+                document.getElementById("ball").src = "/img/magic8ball_7.png";
+            }
+            if (randomInt == 8) {
+                document.getElementById("ball").src = "/img/magic8ball_8.png";
+            }
+            if (randomInt == 9) {
+                document.getElementById("ball").src = "/img/magic8ball_9.png";
+            }
+            if (randomInt == 10) {
+                document.getElementById("ball").src = "/img/magic8ball_10.png";
+            }
+            if (randomInt == 11) {
+                document.getElementById("ball").src = "/img/magic8ball_11.png";
+            }
+            if (randomInt == 12) {
+                document.getElementById("ball").src = "/img/magic8ball_12.png";
+            }
+            if (randomInt == 13) {
+                document.getElementById("ball").src = "/img/magic8ball_13.png";
+            }
+            if (randomInt == 14) {
+                document.getElementById("ball").src = "/img/magic8ball_14.png";
+            }
+            if (randomInt == 15) {
+                document.getElementById("ball").src = "/img/magic8ball_15.png";
+            }
+            if (randomInt == 16) {
+                document.getElementById("ball").src = "/img/magic8ball_16.png";
+            }
+            if (randomInt == 17) {
+                document.getElementById("ball").src = "/img/magic8ball_17.png";
+            }
+            if (randomInt == 18) {
+                document.getElementById("ball").src = "/img/magic8ball_18.png";
+            }
+            if (randomInt == 19) {
+                document.getElementById("ball").src = "/img/magic8ball_19.png";
+            }
+            if (randomInt == 20) {
+                document.getElementById("ball").src = "/img/magic8ball_20.png";
+            }
+        };
+    </script>
+</body>
+</html>
